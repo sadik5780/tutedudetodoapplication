@@ -1,0 +1,117 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.App {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+.mainheading {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.todocontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.todoinput {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #dce3e8;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.todoinput:focus {
+  border-color: #3498db;
+}
+
+.addtodo {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addtodo:hover {
+  background-color: #2980b9;
+}
+
+.todoitems {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.todoitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.todoitem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.todoitem input[type="checkbox"] {
+  margin-right: 0.8rem;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.todoitem span {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+  word-break: break-word;
+}
+
+.todoitem span.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.deletebutton {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
+
+.delete-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.delete-icon:hover {
+  opacity: 1;
+}
