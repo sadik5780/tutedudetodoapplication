@@ -15,6 +15,10 @@ function App() {
     if (todo.trim() !== "") {
       setTodoList([...todoList, { text: todo, completed: false }]);
       setTodo("");
+      alert("Todo added successfully");
+    }
+    if (todo === "") {
+      alert("Please enter a todo");
     }
   };
 
